@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise #4</title>
+</head>
+
+<style>
+	form{
+		width: 50%;
+		margin: auto;
+	}
+	fieldset{
+		background-color: yellow;
+	}
+	#f1,#f3{
+		text-align: center;
+	}
+	#i1
+	{
+		display: block;
+		margin: auto;
+	}
+</style>
+
+<body>
+	
+	<form>
+		 <fieldset id="f1">
+		 	<legend>Personal details:</legend>
+		<label for="firstname">First name:</label> <input type="text" name="firstname" id="firstname">
+		<br>
+		Last name: <input type="text" name="firstname">
+		<br>
+		Email: <input type="email" name="email">
+		<br>
+		gender: 
+		<input type="radio" name="gender" value="male"> Male
+		<input type="radio" name="gender" value="female"> Female
+		<br>
+		 </fieldset>
+
+	
+
+		<fieldset id="f2">
+			<legend>Magazines:</legend>
+			<input type="checkbox" name="mag" value="Stavanger Aftenblad" id="Stavanger Aftenblad"> <label for ="Stavanger Aftenblad"> Stavanger Aftenblad </label><br>
+			<input type="checkbox" name="mag" value="jouza"> Jozaa is the best<br>
+			<input type="checkbox" name="mag" value="jouza2"> Jozaa always the best<br>
+			<input type="checkbox" name="mag" value="jouza3"> Jozaa Jozaa Jozaa<br>
+		</fieldset>
+
+		<fieldset id="f3">
+		<legend>Subscription</legend>
+		Period:<select>
+  					<option value="6 months">6 months</option>
+  					<option value="12 months">12 months</option>
+  					<option value="18 months">18 months</option>
+  					<option value="24 months">24 months</option>
+				</select>
+		</fieldset>
+		<br>
+		<input id="i1" type="submit" value="Subscribe">
+	</form>
+</html>
+</body>
