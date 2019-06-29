@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise #1: Hiding from a list</title>
+</head>
+<style>
+
+	div{
+		width: 3em;
+		height: 25px;
+		border: 1px solid black;
+		margin: 3px;
+		float: left;
+		background-color: blue;
+		text-align: center;
+		font-weight: bold;
+
+	}
+	div:nth-child(odd)
+	{
+		display: none;	
+	}
+	#prime{
+		visibility: hidden;
+	}
+</style>
+<body>
+	<div>1</div>
+	<div id="prime">2</div>
+	<div>3</div>
+	<div>4</div>
+	<div>5</div>
+	<div>6</div>
+	<div>7</div>
+	<div>8</div>
+	<div>9</div>
+	<div>10</div>
+</body>
+</html>
