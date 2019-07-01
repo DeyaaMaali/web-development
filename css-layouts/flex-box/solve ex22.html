@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise #2: Pagniation</title>
+</head>
+<style>
+	body
+	{
+		background-color: blue;
+		text-align: center;
+	}
+	.pag > div
+	{
+		border: black solid 1px;
+		background-color: yellow;
+		width:20px;
+	}
+	.main
+	{
+		border: black solid 2px;
+		background-color: white;
+		width: 80%;
+		height: 200px;
+		margin: auto;
+	/*	position: absolute;*/
+	}
+	.pag
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		/*flex-wrap: wrap;*/
+	}
+
+</style>
+<body>
+	<div class="main">
+		<h2>Responsive Pagination</h2>
+		I'm a responsive page link menu built with flexbox!
+		<div class="pag">
+  			<div>&laquo;</div>
+  			<div>❮</div>
+  			<div>1</div>
+  			<div>2</div>
+  			<div>3</div>
+  			<div>4</div>
+  			<div>5</div>
+  			<div>6</div>
+  			<div>7</div>
+  			<div>8</div>
+  			<div>9</div>
+  			<div>10</div>
+  			<div>❯</div>
+  			<div>&raquo;</div>
+		</div>
+	</div>
+</body>
+</html>
