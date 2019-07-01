@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise #1: Simple flexbox Layout</title>
+</head>
+<style>
+	.main > div
+	{
+		border: black 2px solid;
+		padding: 200px;
+	}
+	.main
+	{
+		display: flex;
+		flex-direction: row;
+		/*flex-wrap: wrap;*/
+	}
+	#d1
+	{
+		background-color: red;
+	}
+	#d2
+	{
+		background-color: blue;
+	}
+	#d3
+	{
+		background-color: yellow;
+	}
+	#d4
+	{
+		background-color: purple;
+	}
+</style>
+<body>
+	<div class="main"> 
+		<div id="d1">I am a flexbok 1</div>
+		<div id="d2">I am a flexbok 2</div>
+		<div id="d3">I am a flexbok 3</div>
+		<div id="d4">I am a flexbok 4</div>
+	</div>
+</body>
+</html>
