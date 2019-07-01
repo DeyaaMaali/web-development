@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Exercise #3: Grid Form </title>
+</head>
+<style>
+	body
+	{
+		background-color: white;
+	}
+	.fl
+	{
+		display: grid;
+		grid-template-columns: 1fr 4fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 7px;
+		background-color: pink;
+
+	}
+	.fl>div
+	{
+		/*border: black solid 2px;*/
+		text-align: left;
+		/*color: white;*/
+		padding-top: 10px;
+		padding-right: 10px;
+	}
+	#d1
+	{
+		grid-row: 1/4;
+		padding-left: 4px;
+		/*background-color: red;*/
+	}
+	#d2
+	{
+		grid-column: 2/5;
+		
+		/*background-color: blue;*/
+	}
+	#d3
+	{
+		/*background-color: pink;*/
+		grid-column: 2/5
+		
+	}
+	#d4
+	{
+		/*background-color: green;*/
+		grid-column: 2/5;
+	}
+	#d5
+	{
+		grid-column: 2/5;
+		/*text-align: center;*/
+	}
+	input{
+		width:100%;
+	}
+</style>
+
+<body>
+	<form>
+	<div class="fl">
+  			<div id="d1">Comments <br>
+  						<textarea rows="10" cols="25"> </textarea>
+  			</div>
+  			<div id="d2">First name:<br>
+  						<input type="text" name="firstname">
+  			</div>
+  			<div id="d3"> E-mail:<br>
+  						 <input type="email" name="email">
+  			</div>
+  			<div id="d4"> Telephone: <br>
+  						 <input type="tel" name="usrtel">
+  						 <!-- <br>
+  						 <input type="submit"> -->
+  			</div>
+  			<div id="d5"> <input type="submit"> </div>
+
+	</div>
+	</form>
+</body>
+</html>
